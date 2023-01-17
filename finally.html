@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Finally Keyword</title>
+</head>
+
+<body class="text-white bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Finally Keyword</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html">Introduction</a></li>
+              <li><a class="dropdown-item" href="try.html">Try </a></li>
+              <li><a class="dropdown-item" href="try.html">Catch </a></li>
+              <li><a class="dropdown-item" href="finally.html">Finally block </a></li>
+              <li><a class="dropdown-item" href="throw.html">throw keyword </a></li>
+              <li><a class="dropdown-item" href="throws.html">throws keyword </a></li>
+              <li><a class="dropdown-item" href="userdefined.html">User Defined Exception </a></li>
+
+
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Finally Block</li>
+    </ol>
+  </nav>
+
+  <div class="container ">
+    <div class="onlycontentinner d-flex justify-content-end">
+      <div id="city">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <div id="bottomnextup">
+                </div>
+                <h1 class="h1">Java Finally block</h1>
+
+
+                <p class="font-monospace fw-lighter my -4"> <strong>Java finally block is always executed whether an
+                    exception is handled or not. Therefore, it contains
+                    all the necessary statements that need to be printed regardless of the exception occurs or not.</p>
+                <p>The finally block follows the try-catch block.</p></strong></p>
+                <h3 class="h3">Flowchart of finally block</h3>
+                <img src="java-finally-block.png" alt="Java finally block">
+                <h4 class="n">Note: If you don't handle the exception, before terminating the program, JVM executes
+                  finally block (if any).</h4>
+                <h2 class="fs-3">Why use Java finally block?</h2>
+                <ul class="points">
+                  <li>finally block in Java can be used to put "<strong>cleanup</strong>" code such as closing a file,
+                    closing connection, etc.</li>
+                  <li>The important statements to be printed can be placed in the finally block.</li>
+                </ul>
+                <hr>
+                <h2 class="h2">Usage of Java finally</h2>
+                <p>Let's see the different cases where Java finally block can be used.</p>
+                <h3 class="h3">Case 1: When an exception does not occur</h3>
+                <img src="finallynoexpe.jpeg" alt="Java finally block">
+
+                <h4 class="h4 my-4">Output</h4>
+                <img src="finallycase1output.jpeg">
+
+                <p class="my-4">Here above exception not occurs but still finally block executes since finally is meant
+                  to execute
+                  whether an exception occurs or not.<br><strong>Flow of Above Program</strong>: First it starts from
+                  the main method and then goes to try block and in try since no exception occurs so flow doesn’t goes
+                  to catch block hence flow goes directly from try to finally block.</p>
+                <hr>
+
+                <h3 class="h3">Case 2: When an exception occurr but not handled by the catch block</h3>
+                <p>Let's see the the fillowing example. Here, the code throws an exception however the catch block
+                  cannot handle it. Despite this, the finally block is executed after the try block and then the program
+                  terminates abnormally.</p>
+
+                <img src="case2finally.jpeg" alt="Java finally block">
+
+                <h4 class="h4 my-4">Output</h4>
+                <img src="case2output.jpeg">
+                <p>Here above exception occurs and corresponding catch block not found/match but still finally block
+                  executes since finally is meant to execute whether an exception occurs or not or whether corresponding
+                  catch block found/match or not.<br><strong>Flow of Above Program</strong>: First starts from main
+                  method and then goes to try block and in try an Arithmetic exception occurs and corresponding catch
+                  block is <strong>not</strong> available so flow <strong>doesn’t</strong> goes to catch block. After
+                  that flow doesn’t go to try block again since once an exception occurs in try block then flow
+                  <strong>doesn’t</strong> come back again to try block. After that finally, execute since finally is
+                  meant to execute whether an exception occurs or not or whether corresponding catch block found/match
+                  or not.
+                </p>
+                <hr>
+
+                <h3 class="h3">Case 3: When an exception occurs and is handled by the catch block</h3>
+                <p><strong>Example:</strong></p>
+                <p>Let's see the following example where the Java code throws an exception and the catch block handles
+                  the exception. Later the finally block is executed after the try-catch block. Further, the rest of the
+                  code is also executed normally.</p>
+                <img src="case3finally.jpeg" alt="Java finally block">
+
+                <h4 class="h4 my-4">Output</h4>
+                <img src="case3finallyoutput.jpeg">
+                <p>Here, the above exception occurs and corresponding catch block found but still finally block executes
+                  since finally is meant to execute whether an exception occurs or not or whether corresponding catch
+                  block found or not.<br><strong>Flow of Above Program</strong>: First, starts from the main method and
+                  then goes to try block and in try an Arithmetic exception occurs and the corresponding catch block is
+                  also available so flow goes to catch block. After that flow doesn’t go to try block again since once
+                  an exception occurs in try block then flow <strong>doesn’t</strong> come back again to try block.
+                  After that finally, execute since finally is meant to execute whether an exception occurs or not or
+                  whether corresponding catch block found or not.</p>
+
+
+                <p class="font-monospace fw-lighter my- 1">This article is contributed by <strong>Srijan Kumar</strong>
+                </p>
+
+
+                <div class="container">
+                  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                    <div class="row">
+                      <div class="col-6 col-md">
+                        <h5>Exception Handling</h5>
+                        <ul class="list-unstyled text-small">
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="try.html">Try</a></li>
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="try.html">Catch</a>
+                          </li>
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="finally.html">Finally
+                              Block</a></li>
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="throws.html">throw
+                              keyword</a>
+                          </li>
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="throws.html">throws
+                              keyword</a>
+                          </li>
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="userdefined.html">User
+                              Defined
+                              Expection</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">Team</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                  crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

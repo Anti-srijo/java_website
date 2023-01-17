@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>User Defined Exception</title>
+</head>
+
+<body class="text-white bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">User Defined Exception</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Introduction</a></li>
+                            <li><a class="dropdown-item" href="try.html">Try </a></li>
+                            <li><a class="dropdown-item" href="try.html">Catch </a></li>
+                            <li><a class="dropdown-item" href="finally.html">Finally block </a></li>
+                            <li><a class="dropdown-item" href="throw.html">throw keyword </a></li>
+                            <li><a class="dropdown-item" href="throws.html">throws keyword </a></li>
+
+                            <li><a class="dropdown-item" href="userdefined.html">User Defined Exception </a></li>
+
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">User Defined Exception</li>
+        </ol>
+    </nav>
+    <div class="container">
+        <h1 class="h1">Java User-Defined Exceptions</h1>
+        <p class="font-monospace fw-lighter my -4"><strong>Java provides us the facility to create our own exceptions
+                which are basically derived classes of Exception.
+                Creating our own Exception is known as a custom exception or user-defined exception.
+                Basically, Java custom exceptions are used to customize the exception according to user needs.
+                <p>The User-Defined Exception is created using the throw keyword </p>
+            </strong></p>
+
+        <h3 class="h3">Why do we need User-Defined Exceptions ?</h3>
+        <p>It is because manier times, the user has certain logical constraints or cases which need to be handled
+            given those cases are encountered.
+        </p>
+        <p>This could be best understood with an example.</p>
+        <p>
+            Given below is a code exhibiting User-defined exception, for a case where if value of
+            a variable <b>a</b> is encountered with a value less than 0, an User-defined exception would be invoked.
+        </p>
+
+        <img src="dc1.jpeg">
+
+        <p><strong>In this Code,</strong>
+        <ol>
+            <li>We have defined a class XYZ which has been inherited from class Exception</li>
+            <li>Then, we have a class q1 where main function is defined</li>
+            <ul>
+                <li>Here, we are taking user input using Scanner class</li>
+                <li>Then we enter the try block</li>
+                <ul>
+                    <li>If a = 0 or a > 1, the code would simply print the value of a</li>
+                    <li>If a < 1, an exception is thrown</li>
+                </ul>
+            </ul>
+            <li>The exception is handled in catch block and a string is printed, "Caught User-Defined Exception"</li>
+        </ol>
+        </p>
+
+        <p><strong>Output for a = 12</strong></p>
+        <img src="dc3.jpeg"> <br>
+        <p></p>
+        <p><strong>Explaination : </strong>Since the value inputted is greater than 0, The inputted value is displayed
+        </p>
+        <p><strong>Output for a = 0</strong></p>
+        <img src="dc4.jpeg"> <br>
+        <p></p>
+        <p><strong>Explaination : </strong>Since the value inputted is equal to 0, The inputted value, i.e, 0 is
+            displayed</p>
+        <p><strong>Output for a = -12</strong></p>
+        <img src="dc5.jpeg"> <br>
+        <p></p>
+        <p><strong>Explaination : </strong>Since the value inputted is less than 0, an User-Defined Exception for values
+            less than 0 is inputted</p>
+        <p></p>
+
+        <p class="font-monospace fw-lighter my- 1">This article is contributed by <strong> Aditya Mishra </strong></p>
+        <div id="bottomnextup">
+            <a class="next" href="throws.html">next →</a>
+            <a class="next" href="finally.html"> ← prev</a>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <div class="container">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <h5>Exception Handling</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="try.html">Try - Catch
+                                Block</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="finally.html">Finally
+                                Block</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="throw.html">throw
+                                keyword</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="throws.html">throws
+                                keyword</a>
+                        </li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="userdefined.html">User
+                                Defined
+                                Expection</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

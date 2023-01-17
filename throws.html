@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Throws Keyword</title>
+</head>
+
+<body class="text-white bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Throws Keyword</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Introduction</a></li>
+                            <li><a class="dropdown-item" href="try.html">Try - Catch Block </a></li>
+
+                            <li><a class="dropdown-item" href="finally.html">Finally block </a></li>
+                            <li><a class="dropdown-item" href="throw.html">throw keyword </a></li>
+                            <li><a class="dropdown-item" href="throws.html">throws keyword </a></li>
+
+                            <li><a class="dropdown-item" href="userdefined.html">User Defined Exception </a></li>
+
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Throws Keyword</li>
+        </ol>
+    </nav>
+    <div class="container ">
+        <div class="onlycontentinner">
+            <div id="city">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <h1 class="h1">Java throws keyword</h1>
+                                <p>The <strong>Java throws keyword</strong> is used to declare an exception. It gives an
+                                    information to the programmer that there may occur an exception. So, it is better
+                                    for the programmer to provide the exception handling code so that the normal flow of
+                                    the program can be maintained.</p>
+                                <p>Exception Handling is mainly used to handle the checked exceptions. If there occurs
+                                    any unchecked exception such as NullPointerException, it is programmers' fault that
+                                    he is not checking the code before it being used.</p>
+                                <h3 class="h3">Syntax of Java throws</h3>
+                                <div class="codeblock">
+                                    <div class="dp-highlighter">
+                                        <div class="bar">
+                                            <div class="tools"><a href="#"
+                                                    onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a
+                                                    href="#"
+                                                    onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                                    href="#"
+                                                    onclick="dp.sh.Toolbar.Command('About',this);return false;"></a>
+                                            </div>
+                                        </div>
+                                        <ol start="1" class="dp-j">
+                                            <li class="alt"><span><span>return_type&nbsp;method_name()&nbsp;</span><span
+                                                        class="keyword">throws</span><span>&nbsp;exception_class_name{&nbsp;&nbsp;</span></span>
+                                            </li>
+                                            <li class=""><span><span
+                                                        class="comment">//method&nbsp;code</span><span>&nbsp;&nbsp;</span></span>
+                                            </li>
+                                            <li class="alt"><span>}&nbsp;&nbsp;</span></li>
+                                        </ol>
+                                    </div><textarea name="code" class="java" style="display: none;">return_type method_name() throws exception_class_name{
+            //method code
+            }
+            </textarea>
+                                </div>
+                                <h3 class="h3">Which exception should be declared?</h3>
+                                <p><strong>Ans:</strong> Checked exception only, because:</p>
+                                <ul class="points">
+                                    <li><strong>unchecked exception:</strong> under our control so we can correct our
+                                        code.</li>
+                                    <li><strong>error:</strong> beyond our control. For example, we are unable to do
+                                        anything if there occurs VirtualMachineError or StackOverflowError.</li>
+                                </ul>
+                                <h3 class="h3">Advantage of Java throws keyword</h3>
+                                <p>Now Checked Exception can be propagated (forwarded in call stack).</p>
+                                <p>It provides information to the caller of the method about the exception.</p>
+
+            </div>
+            <h4 class="n">Rule: If we are calling a method that declares an exception, we must
+                either caught or declare the exception.</h4>
+            <p><strong>There are two cases:</strong></p>
+            <ol class="points">
+                <li><strong>Case 1:</strong> We have caught the exception i.e. we have handled the
+                    exception using try/catch block.</li>
+                <li><strong>Case 2:</strong> We have declared the exception i.e. specified throws
+                    keyword with the method.</li>
+            </ol>
+            <h3 class="h3">Case 1: Handle Exception Using try-catch block</h3>
+            <p>In case we handle the exception, the code will be executed fine whether exception
+                occurs during the program or not.</p>
+            <img src="throws1.png" alt="">
+            </textarea>
+        </div>
+
+        <p><strong>Output:</strong></p>
+        <img src="throws1out.png" alt="">
+    </div>
+    <h3 class="h3">Case 2: Declare Exception</h3>
+    <ul class="points">
+        <li>In case we declare the exception, if exception does not occur, the code will be
+            executed fine.</li>
+        <li>In case we declare the exception and the exception occurs, it will be thrown at
+            runtime because <strong>throws</strong> does not handle the exception.</li>
+
+        <p>Let's see examples for both the scenario.</p>
+        <p><strong><em>A) If exception does not occur</em></strong></p>
+        <img src="throws2.png" alt="">
+        </textarea>
+        </div>
+
+        <p><strong>Output:</strong></p>
+        <img src="throws2out.png" alt="">
+        </pre>
+        </div>
+        <p><strong><em>B) If exception occurs</em></strong></p>
+        <img src="throws3.png" alt="">
+        </textarea>
+        </div>
+
+        <p><strong>Output:</strong></p>
+        <img src="throws3out.png" alt="">
+        <hr>
+        <h3 class="h3">Difference between throw and throws</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p style="text-align:center">S. No.</p>
+                    </th>
+                    <th>
+                        <p style="text-align:center">Key Difference</p>
+                        <div id="AP_G4GR_5"></div>
+                    </th>
+                    <th>
+                        <p style="text-align:center">throw</p>
+                    </th>
+                    <th>
+                        <p style="text-align:center">throws</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Point of Usage</td>
+                    <td>The <strong>throw</strong> keyword is used inside a function. It is used when it is required to
+                        throw an Exception logically.</td>
+                    <td>The <strong>throws</strong> keyword is used in the function signature. It is used when the
+                        function has some statements that can lead to exceptions.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Exceptions Thrown</td>
+                    <td>The <strong>throw</strong> keyword is used to throw an exception explicitly. It can throw only
+                        one exception at a time.</td>
+                    <td>The <strong>throws</strong> keyword can be used to declare multiple exceptions, separated by a
+                        comma. Whichever exception occurs, if matched with the declared ones, is thrown automatically
+                        then.</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Syntax</td>
+                    <td>Syntax of <strong>throw</strong> keyword includes the instance of the Exception to be thrown.
+                        Syntax wise throw keyword is followed by the instance variable.</td>
+                    <td>Syntax of <strong>throws</strong> keyword includes the class names of the Exceptions to be
+                        thrown. Syntax wise throws keyword is followed by exception class names.</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Propagation of Exceptions</td>
+                    <td><strong>throw</strong> keyword cannot propagate checked exceptions. It is only used to propagate
+                        the unchecked Exceptions that are not checked using the throws keyword.&nbsp;</td>
+                    <td><strong>throws</strong> keyword is used to propagate the checked Exceptions only.&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 class="h3">Q. Can we rethrow an exception?</h3>
+
+        <p>Yes, by throwing same exception in catch block.</p>
+        <p class="font-monospace fw-lighter my- 1">This article is contributed by <strong>
+                Jyoti Kumari </strong></p>
+        <div id="bottomnextup">
+            <a class="next" href="throw.html">next →</a>
+            <a class="next" href="userdefined.html"> ← prev</a>
+        </div>
+
+        </div>
+        <div class="container">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                    <div class="col-6 col-md">
+                        <h5>Exception Handling</h5>
+                        <ul class="list-unstyled text-small">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="try.html">Try -
+                                    Catch
+                                    Block</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="finally.html">Finally
+                                    Block</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="throw.html">throw
+                                    keyword</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="throws.html">throws
+                                    keyword</a>
+                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="userdefined.html">User
+                                    Defined
+                                    Expection</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</div>
+
+</html>

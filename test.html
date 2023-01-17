@@ -1,0 +1,73 @@
+<h2 id="throw">Java throw keyword</h2>
+            <p>The <code>throw</code> keyword is used to explicitly throw a single exception.</p>
+            <p>When an exception is thrown, the flow of program execution transfers from the <code>try</code> block to
+                the
+                <code>catch</code> block. We use the <code>throw</code> keyword within a method.
+            </p>
+            <pre
+                style="max-height: 600px;"><code class="java hljs"><span class="hljs-keyword">throw</span> throwableObject;</code></pre>
+            <p>A throwable object is an instance of class <code>Throwable</code> or subclass of the
+                <code>Throwable</code>
+                class.</p>
+            <hr>
+            <h3>Example 2: Java throw keyword</h3>
+            <div class="pre-code-wrapper">
+                <div title="Click to copy" class="copy-code-button"></div>
+                <pre class="exec" style="max-height: 600px;"><code class="java hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">divideByZero</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ArithmeticException(<span class="hljs-string">"Trying to divide by 0"</span>);
+    }
+  
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+      divideByZero();
+    }
+  }
+
+  <p><strong>Output</strong></p>
+  <pre><samp>Exception in thread "main" java.lang.ArithmeticException: Trying to divide by 0
+    at Main.divideByZero(Main.java:3)
+    at Main.main(Main.java:7)
+exit status 1
+</samp></pre>
+
+                <p>In this example, we are explicitly throwing an <code>ArithmeticException. </code></p>
+                <p><strong>Note:</strong> <code>ArithmeticException</code> is an unchecked exception. It's usually not
+                    necessary
+                    to handle unchecked exceptions.</p>
+                <hr>
+
+                <h3>Example 3: Throwing checked exception</h3>
+                <pre style="max-height: 600px;"><code class="java hljs"><span class="hljs-keyword">import</span> java.io.*;
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">findFile</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IOException(<span class="hljs-string">"File not found"</span>);
+      }
+    
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+          findFile();
+          System.out.println(<span class="hljs-string">"Rest of code in try block"</span>);
+        } <span class="hljs-keyword">catch</span> (IOException e) {
+          System.out.println(e.getMessage());
+        }
+      }
+    }
+    </code></pre>
+                <p><strong>Output</strong></p>
+                <pre><samp>File not found
+    </samp></pre>
+                <p>Note that since it is a checked exception, we must specify it in the <code>throws</code> clause.</p>
+                <p>We have handled this exception in the <code>main</code><code>()</code> method. The flow of program
+                    execution
+                    transfers from the <code>try</code> block to <code>catch</code> block when an exception is thrown.
+                    So, the
+                    rest of the code in the <code>try</code> block is skipped and statements in the <code>catch</code>
+                    block are
+                    executed.</p>
+
+
+
+                </code>
+
+            </div>
+        </div>

@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>WT Assignment</title>
+</head>
+
+<body class="text-white bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Exception Handling</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html">Introduction</a></li>
+              <li><a class="dropdown-item" href="try.html">Try </a></li>
+              <li><a class="dropdown-item" href="try.html">Catch </a></li>
+              <li><a class="dropdown-item" href="finally.html">Finally block </a></li>
+              <li><a class="dropdown-item" href="throw.html">throw keyword </a></li>
+              <li><a class="dropdown-item" href="throws.html">throws keyword </a></li>
+
+              <li><a class="dropdown-item" href="userdefined.html">User Defined Exception </a></li>
+
+            </ul>
+          </li>
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpeg" class="d-block w-100 opacity-25" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 href="try.html">Try Catch Block</h5>
+          <a href="try.html" class="stretched-link"></a>Try - A block of code to be tested for errors while it is being
+          executed
+
+          Catch - Defines a block of code to be executed, if an error occurs in the try block.</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpeg" class="d-block w-100 opacity-25" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 href="finally.html">Finally Block</h5>
+          <a href="finally.html" class="stretched-link"></a>Used to create a block of code that follows a try block</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="5.jpeg" class="d-block w-100 opacity-25" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 href="throw.html">Throw in Java</h5>
+          <a href="throw.html" class="stretched-link"></a>Used to throw an exception explicitly.</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="5.jpeg" class="d-block w-100 opacity-25" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 href="throws.html">Throws in Java</h5>
+          <a href="throws.html" class="stretched-link"></a> Used to declare an exception.</a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img src="7.jpeg" class="d-block w-100 opacity-25" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 href="userdefined.html">User defined Exception</h5>
+          <a href="userdefined.html" class="stretched-link"></a> Users can also create exceptions</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container ">
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+
+        </h3>
+
+        <article class="blog-post">
+          <h3 class="blog-post-title pb-4 mb-4 fst-italic border-bottom">Introduction</h3>
+          <div class="fs-4 mb-3 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-magic"
+              viewBox="0 0 16 16" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;">
+              <path
+                d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z">
+              </path>
+            </svg>
+            Exception handling enables a program to deal with exceptional situations and continue its normal execution.
+          </div>
+
+          <p>Runtime errors occur while a program is running if the JVM detects an operation that is impossible to carry
+            out. For example, if you access an array using an index that is out of bounds, you will get a runtime error
+            with an ArrayIndexOutOfBoundsException . If you enter a double value when your program expects an integer,
+            you will get a runtime error with an InputMismatchException. In Java, runtime errors are thrown as
+            exceptions. An exception is an object that represents an error or a condition that prevents execution from
+            proceeding normally. If the exception is not handled, the program will terminate abnormally. How can you
+            handle the exception so that the program can continue to run or else terminate gracefully? </p>
+
+      </div>
+    </div>
+  </div>
+  <div class=" container text">
+    <p>Exception Handling in Java is one of the effective means to handle the runtime errors so that the regular flow of
+      the application can be preserved. Java Exception Handling is a mechanism to handle runtime errors such as
+      ClassNotFoundException, IOException, SQLException, RemoteException, etc.</p>
+    <h4>What is an Exception?</h4>
+    <p>An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time,
+      that disrupts the normal flow of the program’s instructions. Exceptions can be caught and handled by the program.
+      When an exception occurs within a method, it creates an object. This object is called the exception object. It
+      contains information about the exception such as the name and description of the exception and the state of the
+      program when the exception occurred.</p>
+    <p><strong>An exception can occur for many reasons. Some of them are:</strong></p>
+    <ul>
+      <li>Invalid user input</li>
+      <li>Device failure</li>
+      <li>Loss of network connection</li>
+      <li>Physical limitations (out of disk memory)</li>
+      <li>Code errors</li>
+      <li>Opening an unavailable file</li>
+    </ul>
+    <h4>What is an Error?</h4>
+    <p>Errors represent irrecoverable conditions such as Java virtual machine (JVM) running out of memory, memory leaks,
+      stack overflow errors, library incompatibility, infinite recursion, etc.</p>
+    <p>Errors are usually beyond the control of the programmer and we should not try to handle errors.</p>
+    <div id="AP_G4GR_5"></div>
+    <h3>Error vs Exception</h3>
+    <ul>
+      <li><strong>Error:&nbsp;</strong>An Error indicates a serious problem that a reasonable application should not try
+        to catch.</li>
+      <li><strong>Exception:&nbsp;</strong>Exception indicates conditions that a reasonable application might try to
+        catch.</li>
+    </ul>
+    <h3>Exception Hierarchy</h3>
+    <p>All exception and errors types are subclasses of class <strong>Throwable</strong>, which is the base class of the
+      hierarchy. One branch is headed by <strong>Exception</strong>. This class is used for exceptional conditions that
+      user programs should catch. NullPointerException is an example of such an exception. Another branch,
+      <strong>Error</strong> is used by the Java run-time system(<a
+        href="https://www.geeksforgeeks.org/jvm-works-jvm-architecture/">JVM</a>) to indicate errors having to do with
+      the run-time environment itself(JRE). StackOverflowError is an example of such an error.
+    </p>
+    <p><img src="https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png"
+        alt="Exception Hierarchy in Java"></p>
+    <h3>Types of Exceptions&nbsp;</h3>
+    <p>Java defines several types of exceptions that relate to its various class libraries. Java also allows users to
+      define their own exceptions.</p>
+    <p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20220120111809/Group21-660x330.jpg"
+        alt="Types of Exceptions " width="660"></p>
+    <p style="text-align:justify"><strong>Exceptions can be Categorized into 2 Ways:</strong></p>
+    <ol>
+      <li style="text-align:justify">Built-in Exceptions<ul>
+          <li style="text-align:justify">Checked Exception</li>
+          <li style="text-align:justify">Unchecked Exception<br>&nbsp;</li>
+        </ul>
+      </li>
+      <li>User-Defined Exceptions</li>
+    </ol>
+    <p><strong>1. Built-in Exceptions: </strong>Built-in exceptions are the exceptions that are available in Java
+      libraries. These exceptions are suitable to explain certain error situations.</p>
+    <ul>
+      <li><strong>Checked Exceptions: </strong>Checked exceptions are called compile-time exceptions because these
+        exceptions are checked at compile-time by the compiler.</li>
+      <li><strong>Unchecked Exceptions: </strong>The unchecked exceptions are just opposite to the checked exceptions.
+        The compiler will not check these exceptions at compile time. In simple words, if a program throws an unchecked
+        exception, and even if we didn’t handle or declare it, the program would not give a compilation error.</li>
+    </ul>
+
+
+    <p><strong>2. User-Defined Exceptions: </strong>Sometimes, the built-in exceptions in Java are not able to describe
+      a certain situation. In such cases, users can also create exceptions which are called ‘user-defined
+      Exceptions’.&nbsp;</p>
+    <p><i>The advantages of Exception Handling in Java are as follows:</i></p>
+    <ul>
+      <li>Provision to Complete Program Execution</li>
+      <li>Easy Identification of Program Code and Error-Handling Code</li>
+      <li>Propagation of Errors</li>
+      <li>Meaningful Error Reporting</li>
+      <li>Identifying Error Types</li>
+    </ul>
+
+
+
+    <p>&nbsp;</p>
+    <p><strong>Points to remember:&nbsp;</strong></p>
+    <p>&nbsp;</p>
+    <ul>
+      <li>In a method, there can be more than one statement that might throw an exception, So put all these statements
+        within their own <strong>try</strong> block and provide a separate exception handler within their own
+        <strong>catch</strong> block for each of them.
+      </li>
+      <li>If an exception occurs within the <strong>try</strong> block, that exception is handled by the exception
+        handler associated with it. To associate exception handler, we must put a <strong>catch</strong> block after it.
+        There can be more than one exception handlers. Each <strong>catch</strong> block is a exception handler that
+        handles the exception of the type indicated by its argument. The argument, ExceptionType declares the type of
+        exception that it can handle and must be the name of the class that inherits from the <strong>Throwable</strong>
+        class.</li>
+      <li>For each try block there can be zero or more catch blocks, but <strong>only one</strong> final block.</li>
+      <li>The finally block is optional.It always gets executed whether an exception occurred in try block or not. If an
+        exception occurs, then it will be executed after <strong>try and catch blocks.</strong>&nbsp;And if an exception
+        does not occur then&nbsp;it will be executed after the <strong>try</strong> block.&nbsp;The finally block in
+        java is used to put important codes such as clean up code e.g. closing the file or closing the connection.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p><strong>Summary&nbsp;</strong></p>
+    <p>&nbsp;</p>
+    <p><img src="https://media.geeksforgeeks.org/wp-content/uploads/Exception.png" alt="Exception" height="60%"
+        width="60%"></p>
+    <p>&nbsp;</p>
+
+
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Try Catch Block</h3>
+
+            <p class="card-text mb-auto">The try block contains set of statements where an exception can occur.Catch
+              block is used to handle the uncertain condition of try block.</p>
+            <a href="try.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Finally Block</h3>
+            <p class="mb-auto">The code in finally block is always executed irrespective of whether an expection is
+              thrown or not or whether it is handled or not.</p>
+            <a href="finally.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Throw in Java</h3>
+
+            <p class="card-text mb-auto">The throw keyword in Java is used to explicitly throw an exception from a
+              method or any block of code.</p>
+            <a href="try.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Throws in java</h3>
+            <p class="mb-auto">Used in the signature of method to indicate that this method might throw one of the
+              listed type exceptions.
+            </p>
+            <a href="finally.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">User defined Expection</h3>
+
+            <p class="card-text mb-auto">TThe built-in exceptions in Java are not able to describe a certain
+              situation, in such
+              cases, users can also create exceptions which are called user-defined Exceptions.</p>
+            <a href="try.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-6 col-md">
+          <h5>Exception Handling</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="try.html">Try - Catch Block</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="finally.html">Finally Block</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="throw.html">throw keyword</a>
+            </li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="throws.html">throws keyword</a>
+            </li>
+
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="userdefined.html">User Defined
+                Expection</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
